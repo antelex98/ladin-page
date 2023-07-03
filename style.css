@@ -93,23 +93,38 @@ button{
     
 }
 
+h2{
+    text-align: center;
+    background-color: #fff;
+}
+
 .information{
-    height: 100px;
-    background-color: rgb(222, 223, 224);
-    display: flex;
-    align-items: center;
-    justify-content: center;
+   display: grid;
+   grid-template-columns: repeat(3,1fr);
+   gap: 3rem;
+   overflow: auto;
+   background-color: #fff;
+   width: 100%;
+   height: auto;
+   margin-bottom: 30px;
+   font-size: 4rem;
 }
 
-h2 {
-    display: flex;
-    align-self: center;
-    
+.information-img{
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+   padding: 3rem;
+   text-align: center;
 }
 
-.information > li{
-    list-style: none;
-    display: flex;
-    align-items: stretch;
+.information-img p{
+    margin: 0;
+    font-size: 20px;
+}
+
+.information-img img{
+    width: 100%;
+    height: 50%;
 }
 
